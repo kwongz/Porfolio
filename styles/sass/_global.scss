@@ -1,0 +1,84 @@
+// colors
+$grey: #9a9a9a;
+$greyDark: #343a40;
+$white: #ffffff;
+$black: #000000;
+
+html {
+  font-size: 62.5%;
+  font-family: "Cantata One", serif;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid black;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: $greyDark;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: $white;
+  border-bottom: 3px solid rgba($color: #000000, $alpha: 0);
+}
+
+a:hover,
+a:focus {
+  border-bottom: 3px solid $white;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  word-spacing: 1px;
+  color: $grey;
+}
+
+svg {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  z-index: 3;
+  fill: $white;
+}
+
+// stripped styles
+h1,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}

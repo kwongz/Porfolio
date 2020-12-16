@@ -1,0 +1,145 @@
+// General Section styling
+section h2 {
+  text-align: center;
+}
+
+section {
+  margin-top: 50px;
+  padding: 50px 0px;
+}
+
+.website .links {
+  margin-top: 50px;
+  padding-bottom: 0px;
+}
+
+.links a {
+  padding: 10px 20px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 0 15px;
+}
+
+.links a:hover,
+.links a:focus {
+  background-color: black;
+  color: white;
+}
+// About Section
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  h2 {
+    text-align: left;
+    border-bottom: none;
+    margin: initial;
+  }
+  div {
+    width: 60%;
+    height: 500px;
+    padding: 0px 15px;
+  }
+  .imageContainer {
+    width: 40%;
+    img {
+      margin: 0px;
+    }
+  }
+}
+
+// Skills Section
+.skills {
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.skillContainer ul {
+  flex-wrap: wrap;
+  font-size: 5rem;
+}
+
+.skillContainer li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+
+.skillContainer span {
+  font-size: 2rem;
+  padding-top: 5px;
+}
+
+// project section
+
+.website {
+  display: flex;
+  align-items: center;
+}
+
+.website div {
+  width: 50%;
+  padding-bottom: 100px;
+}
+
+.website .imageContainer {
+  padding-right: 15px;
+  img {
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.website .description {
+  padding-left: 50px;
+}
+
+.languages {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.languages li {
+  font-size: 3rem;
+}
+
+// contact section
+.contact {
+  padding-bottom: 100px;
+}
+.contact a {
+  color: black;
+}
+
+.contact a:hover,
+.contact a:focus {
+  border-bottom: 3px solid black;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  max-width: 300px;
+}
+
+.socialMedia a {
+  font-size: 4rem;
+}
+
+.contact .flexContainer div {
+  width: 50%;
+}
+
+.contact .imageContainer {
+  padding-right: 15px;
+  img {
+    box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.contact .description {
+  padding-left: 50px;
+}
