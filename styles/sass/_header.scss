@@ -1,7 +1,7 @@
 header {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../assets./back-flip.jpg") no-repeat;
+    url("../assets/back-flip.jpg") no-repeat;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -36,4 +36,27 @@ h1 {
 
 h1:last-child {
   margin-bottom: 12vh;
+}
+
+.typeWriter {
+  position: relative;
+  height: 10%;
+}
+
+.typeWriter::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-right: 2px solid white;
+  animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

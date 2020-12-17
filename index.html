@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Kyle Wong's Portfolio</title>
 </head>
@@ -24,149 +25,144 @@
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
-                    <a href="#dance">Dance</a>
+                    <!-- <a href="#dance">Dance</a> -->
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
         </div>
         <div class="container wrapper">
             <h1>Kyle Wong</h1>
-            <h1 class="typeWriter">Web Developer</h1>
+            <h1 class="typeWriter" id="typeWriter"></h1>
         </div>
     </header>
-    <svg x="0px" y="0px" viewBox="0 186.5 1920 113.5">
-        <polygon points="-30,300 355.167,210.5 1432.5,290 1920,198.5 1920,300"></polygon>
-    </svg>
-        <section id="about" class="about wrapper">
-                <div class="imageContainer">
-                    <img src="./assets/KYLE7.jpg" alt="a picture of the daily water calculator homepage">
-                </div>
-                <div>
-                    <h2>I'm Kyle Wong</h2>
-                    <h3>Dancer to Web Developer</h3>
-
-                    <p>Hello, my name is Kyle Wong, i am a Front-Developer, former biomech researcher turned professional dancer. My diverse careers stem from a unyeilding fascination of technology and artistry. The skills I have developed over the years have given me a unique outlook on both functionality and design.</p>
-
-                    <p>I have a deep passion for learning, the development industry is always moving forward,and i am eager to see what new techniques and methods i can add to my skillset.</p>
-                    
-                    <p>I am excited to find a company that has the resources to allow me to grow and continue improve my skills as web developer and to bring everything i have to the table.</p>
-                </div>
-        </section>
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <div class="skillContainer" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">
-                <ul class="flexContainer wrapper">
-                    <li><i class="fab fa-html5"></i><span>HTML5</span></li>
-                    <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
-                    <li><i class="fab fa-js"></i><span>Javascript (ES6)</span></li>
-                    <li><i class="fab fa-sass"></i><span>SASS/SCSS</span></li>
-                    <li><span>JQuery</span></li>
-                    <li><i class="fas fa-database"></i><span>Rest APIs</span></li>
-                    <li><i class="fab fa-react"></i><span>REACT</span></li>
-                    <li><i class="fab fa-gripfire"></i><span>Firebase</span></li>
-                    <li><i class="fab fa-github"></i><span>Git</span></li>
-                    <li><i class="fas fa-terminal"></i><span>Cmder</span></li>
-                    <li><i class="fas fa-mobile-alt"></i><span>Responsive <span class="block">Design</span></span></li>
-                    <li><i class="fas fa-universal-access"></i><span>Accessiblity</span></li>
-                </ul>
-            </div>
-        </section>
-        <div class="border borderRev">
-            <span class="left"></span>
-            <span class="right"></span>
+    <section id="about" class="about wrapper">
+        <div class="imageContainer">
+            <img src="./assets/KYLE7.jpg" alt="a picture of the daily water calculator homepage">
         </div>
-        <section id="projects" class="projects wrapper">
-            <h2>Current Projects</h2>
-            <div>
-                <ul>
-                    <li class="website" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="imageContainer">
-                            <img src="./assets/project-3-img.png" alt="Daily Water Calculator Homepage">
-                        </div>
-                        <div class="description">
-                            <h3>Daily Water Calculator</h3>
-                            <p>8 glasses of water a day is the saying, but where is the evidence? Mutliple journal articles
-                                point towards mutiple factors (weight, climate, activity level) determine how much water you
-                                should be drinking. Use this app to calculate and its alarm to remind yourself to get your
-                                daily water!</p>
-                            <ul class="languages">
-                                <li><i class="fab fa-html5"></i></li>
-                                <li><i class="fab fa-css3-alt"></i></li>
-                                <li><i class="fab fa-js"></i></li>
-                                <li>JQuery</li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://kwongz.github.io/kyle-wong-project-3/">Live Link</a>
-                                <a href="https://kwongz.github.io/kyle-wong-project-3/">Code</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="website" data-aos="fade-left" data-aos-duration="1000">
-                        <div class="imageContainer">
-                            <img src="./assets/project-5-img.png" alt="Nutrition Calculator Homepage">
-                        </div>
-                        <div class="description">
-                            <h3>Nutrition Calculator</h3>
-                            <p>Are you curious how many calories that apple was? With this app you can search through the edamam API and find all the nutritional values your interested in.</p>
-                            <ul class="languages">
-                                <li><i class="fab fa-html5"></i></li>
-                                <li><i class="fab fa-css3-alt"></i></li>
-                                <li><i class="fab fa-js"></i></li>
-                                <li><i class="fab fa-react"></i></li>
-                                <li><i class="fas fa-database"></i></li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://kwongz.github.io/project-5-kyle-wong/">Live Link</a>
-                                <a href="https://github.com/kwongz/project-5-kyle-wong.git">Code</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="website" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="imageContainer">
-                            <img src="./assets/project-6-img.png" alt="College Navigator Homepage">
-                        </div>
-                        <div class="description">
-                            <h3>College Navigator</h3>
-                            <p>Find universities, colleges and trade schools in your are with a click of button. Use this application to keep a record and add notes of universities by searching a location<. Don't see your school listed in the API, no problem, with firebase you can add and help the community create a robust and updated library./p>
-                            <ul class="languages">
-                                <li><i class="fab fa-html5"></i></li>
-                                <li><i class="fab fa-css3-alt"></i></li>
-                                <li><i class="fab fa-js"></i></li>
-                                <li><i class="fab fa-react"></i></li>
-                                <li><i class="fas fa-database"></i></li>
-                                <li><i class="fab fa-gripfire"></i></li>
-                            </ul>
-                            <div class="links">
-                                <a href="https://collegenavigator.github.io/project6CollegeNavigator/">Live Link</a>
-                                <a href="https://github.com/CollegeNavigator/project6CollegeNavigator">Code</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="wrapper">
-                <h2>Contact Me</h2>
-                <div class="flexContainer">
-                    <div class='imageContainer'>
-                        <img src="./assets/kyletripleedit.jpg" alt="A picture of 3 Kyle's with different personalities">
+        <div>
+            <h2>I'm Kyle Wong</h2>
+            <h3>Dancer to Web Developer</h3>
+
+            <p>Hello, my name is Kyle Wong. I am a Front-Developer, former biomech researcher turned professional dancer. My diverse careers stem from an unyeilding fascination of technology and artistry. The skills I have developed over the years have given me a unique outlook on both functionality and design.</p>
+
+            <p>I have a deep passion for learning, the development industry is always moving forward, and i am eager to see what new techniques and methods i can add to my skillset.</p>
+            
+            <p>I am excited to find a company with the resources to allow me to grow and continue to improve my skills as a web developer and to bring everything I have to the table.</p>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skillContainer" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">
+            <ul class="flexContainer wrapper">
+                <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+                <li><i class="fab fa-css3-alt"></i><span>CSS3</span></li>
+                <li><i class="fab fa-js"></i><span>Javascript (ES6)</span></li>
+                <li><i class="fab fa-sass"></i><span>SASS/SCSS</span></li>
+                <li><i class="devicon-jquery-plain"></i><span>JQuery</span></li>
+                <li><i class="fas fa-database"></i><span>Rest APIs</span></li>
+                <li><i class="fab fa-react"></i><span>REACT</span></li>
+                <li><i class="fab fa-gripfire"></i><span>Firebase</span></li>
+                <li><i class="fab fa-github"></i><span>Git</span></li>
+                <li><i class="fas fa-terminal"></i><span>Cmder</span></li>
+                <li><i class="fas fa-mobile-alt"></i><span>Responsive <span class="block">Design</span></span></li>
+                <li><i class="fas fa-universal-access"></i><span>Accessiblity</span></li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="projects wrapper">
+        <h2>Current Projects</h2>
+        <div>
+            <ul>
+                <li class="website" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="imageContainer">
+                        <img src="./assets/project-3-img.png" alt="Daily Water Calculator Homepage">
                     </div>
                     <div class="description">
-                        <p>Whether you are a potential client, employer or fellow web developer I am available to answer any questions or chat about my projects or my journey from dancer to web developer anytime. You can reach me at <a href="mailto:kyle.wong917@gmail.com">Kyle.wong917@gmail.com</a></p>
-                        <ul class="socialMedia">
-                            <li><a href="https://github.com/kwongz"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://www.instagram.com/kwongz/"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/kyle-wong-410465a5/"><i class="fab fa-linkedin"></i></a>></li>
-                            <li><a href="https://twitter.com/kylekodes"><i class="fab fa-twitter-square"></i></a></li>
+                        <h3>Daily Water Calculator</h3>
+                        <p>8 glasses of water a day is the saying, but where is the evidence? Mutliple journal articles
+                            point towards mutiple factors (weight, climate, activity level) determine how much water you
+                            should be drinking. Use this app to calculate and its alarm to remind yourself to get your
+                            daily water!</p>
+                        <ul class="languages">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-js"></i></li>
+                            <li>JQuery</li>
                         </ul>
+                        <div class="links">
+                            <a href="https://kwongz.github.io/kyle-wong-project-3/">Live Link</a>
+                            <a href="https://kwongz.github.io/kyle-wong-project-3/">Code</a>
+                        </div>
                     </div>
+                </li>
+                <li class="website" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="imageContainer">
+                        <img src="./assets/project-5-img.png" alt="Nutrition Calculator Homepage">
+                    </div>
+                    <div class="description">
+                        <h3>Nutrition Calculator</h3>
+                        <p>Are you curious how many calories that apple was? With this app you can search through the edamam API and find all the nutritional values your interested in.</p>
+                        <ul class="languages">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-js"></i></li>
+                            <li><i class="fab fa-react"></i></li>
+                            <li><i class="fas fa-database"></i></li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://kwongz.github.io/project-5-kyle-wong/">Live Link</a>
+                            <a href="https://github.com/kwongz/project-5-kyle-wong.git">Code</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="website" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="imageContainer">
+                        <img src="./assets/project-6-img.png" alt="College Navigator Homepage">
+                    </div>
+                    <div class="description">
+                        <h3>College Navigator</h3>
+                        <p>Find universities, colleges and trade schools in your are with a click of button. Use this application to keep a record and add notes of universities by searching a location<. Don't see your school listed in the API, no problem, with firebase you can add and help the community create a robust and updated library.</p>
+                        <ul class="languages">
+                            <li><i class="fab fa-html5"></i></li>
+                            <li><i class="fab fa-css3-alt"></i></li>
+                            <li><i class="fab fa-js"></i></li>
+                            <li><i class="fab fa-react"></i></li>
+                            <li><i class="fas fa-database"></i></li>
+                            <li><i class="fab fa-gripfire"></i></li>
+                        </ul>
+                        <div class="links">
+                            <a href="https://collegenavigator.github.io/project6CollegeNavigator/">Live Link</a>
+                            <a href="https://github.com/CollegeNavigator/project6CollegeNavigator">Code</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="wrapper">
+            <h2>Contact Me</h2>
+            <div class="flexContainer">
+                <div class='imageContainer'>
+                    <img src="./assets/kyletripleedit.jpg" alt="A picture of 3 Kyle's with different personalities">
+                </div>
+                <div class="description">
+                    <p>Whether you are a potential client, employer or fellow web developer I am available to answer any questions or chat about my projects or my journey from dancer to web developer anytime. You can reach me at <a href="mailto:kyle.wong917@gmail.com">Kyle.wong917@gmail.com</a></p>
+                    <ul class="socialMedia">
+                        <li><a href="https://github.com/kwongz"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://www.instagram.com/kwongz/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kyle-wong-410465a5/"><i class="fab fa-linkedin"></i></a>></li>
+                        <li><a href="https://twitter.com/kylekodes"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <Footer>
         Designed by Kyle Wong 2020
     </Footer>
+
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
