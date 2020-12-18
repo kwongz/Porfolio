@@ -10,6 +10,9 @@ header {
 
 // navbar
 .navBar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   nav {
     flex-grow: 1;
     min-width: 375px;
@@ -18,8 +21,18 @@ header {
   }
   p {
     flex-grow: 6;
+    color: white;
     border-bottom: 3px solid rgba($color: #000000, $alpha: 0);
+    font-weight: bold;
+    font-size: 2rem;
   }
+}
+
+// sliding nav
+
+.toggle,
+input[type="checkbox"] {
+  display: none;
 }
 
 .container {
@@ -59,4 +72,73 @@ h1:last-child {
   100% {
     opacity: 1;
   }
+}
+
+@media (max-width: 760px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .navBar {
+    overflow: hidden;
+    position: fixed;
+    left: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    .flexContainer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      font-size: 3rem;
+      margin: 0px;
+      padding: 10px 0px;
+    }
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+    a {
+      padding: 15px 0px;
+      width: 100%;
+      text-align: center;
+    }
+    a:hover,
+    a:focus {
+      background-color: orange;
+      border-bottom: none;
+    }
+  }
+
+  .toggle,
+  input[type="checkbox"] {
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 5rem;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    z-index: 5;
+    color: orange;
+  }
+
+  input[type="checkbox"] {
+    z-index: 10;
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:hover {
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked ~ .navBar {
+    left: 0px;
+  }
+
+  // end of 760px media
 }

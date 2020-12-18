@@ -273,6 +273,7 @@ html {
   font-size: 62.5%;
   font-family: "Cantata One", serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
@@ -367,6 +368,12 @@ header {
   color: #ffffff;
 }
 
+.navBar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .navBar nav {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -384,7 +391,15 @@ header {
   -webkit-box-flex: 6;
       -ms-flex-positive: 6;
           flex-grow: 6;
+  color: white;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.toggle,
+input[type="checkbox"] {
+  display: none;
 }
 
 .container {
@@ -443,12 +458,84 @@ h1:last-child {
   }
 }
 
+@media (max-width: 760px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .navBar {
+    overflow: hidden;
+    position: fixed;
+    left: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .navBar .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navBar p {
+    font-size: 3rem;
+    margin: 0px;
+    padding: 10px 0px;
+  }
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  nav a {
+    padding: 15px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  nav a:hover,
+  nav a:focus {
+    background-color: orange;
+    border-bottom: none;
+  }
+  .toggle,
+  input[type="checkbox"] {
+    display: block;
+    height: 50px;
+    width: 50px;
+    font-size: 5rem;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    z-index: 5;
+    color: orange;
+  }
+  input[type="checkbox"] {
+    z-index: 10;
+    opacity: 0;
+  }
+  input[type="checkbox"]:hover {
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked ~ .navBar {
+    left: 0px;
+  }
+}
+
 section h2 {
   text-align: center;
 }
 
 section {
-  margin-top: 50px;
   padding: 50px 0px;
 }
 
@@ -459,6 +546,7 @@ section {
 .website .links {
   margin-top: 50px;
   padding-bottom: 0px;
+  width: 100%;
 }
 
 .links a {
@@ -482,7 +570,6 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
 }
 
 .about h2 {
@@ -499,6 +586,7 @@ section {
 
 .about .imageContainer {
   width: 40%;
+  min-width: 300px;
 }
 
 .about .imageContainer img {
@@ -545,6 +633,10 @@ section {
 .website div {
   width: 50%;
   padding-bottom: 100px;
+}
+
+.website div:last-child {
+  padding-bottom: 0px;
 }
 
 .website .imageContainer {
@@ -595,7 +687,6 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 40%;
   max-width: 300px;
 }
 
@@ -618,6 +709,98 @@ section {
 
 .contact .description {
   padding-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 25px;
+  }
+  .block {
+    display: block;
+  }
+  .about {
+    margin-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about h2 {
+    width: initial;
+    text-align: center;
+  }
+  .about .imageContainer {
+    padding: 25px 0px;
+  }
+  .about div {
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  .skillContainer li {
+    width: 33%;
+  }
+  .skillContainer ul {
+    font-size: 4rem;
+  }
+  .website {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .website div {
+    width: 100%;
+    text-align: center;
+  }
+  .website ul {
+    margin: 0 auto;
+  }
+  .website .description {
+    padding: 15px 0px;
+    height: 100%;
+  }
+  .website .imageContainer {
+    padding: 25px 0px;
+  }
+  .socialMedia a {
+    font-size: 3rem;
+  }
+  .contact .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .flexContainer div {
+    padding: 0px;
+    text-align: center;
+  }
+  .contact .flexContainer .imageContainer {
+    width: 80%;
+  }
+  .contact .flexContainer .description {
+    padding-top: 25px;
+    width: 100%;
+  }
+  .contact .flexContainer ul {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .skillContainer li {
+    width: 50%;
+  }
+  .links a {
+    font-size: 1.4rem;
+  }
 }
 
 footer {

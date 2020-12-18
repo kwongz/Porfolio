@@ -4,7 +4,6 @@ section h2 {
 }
 
 section {
-  margin-top: 50px;
   padding: 50px 0px;
 }
 
@@ -15,6 +14,7 @@ section {
 .website .links {
   margin-top: 50px;
   padding-bottom: 0px;
+  width: 100%;
 }
 
 .links a {
@@ -34,7 +34,6 @@ section {
 .about {
   display: flex;
   align-items: center;
-  margin-top: 100px;
   h2 {
     text-align: left;
     border-bottom: none;
@@ -47,6 +46,7 @@ section {
   }
   .imageContainer {
     width: 40%;
+    min-width: 300px;
     img {
       margin: 0px;
     }
@@ -88,6 +88,10 @@ section {
   padding-bottom: 100px;
 }
 
+.website div:last-child {
+  padding-bottom: 0px;
+}
+
 .website .imageContainer {
   padding-right: 15px;
   img {
@@ -126,7 +130,6 @@ section {
 .socialMedia {
   display: flex;
   justify-content: space-between;
-  width: 40%;
   max-width: 300px;
 }
 
@@ -147,4 +150,101 @@ section {
 
 .contact .description {
   padding-left: 50px;
+}
+
+@media (max-width: 1200px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  section {
+    padding: 25px;
+  }
+
+  .block {
+    display: block;
+  }
+
+  // about 900px
+  .about {
+    margin-top: 0px;
+    flex-direction: column;
+    h2 {
+      width: initial;
+      text-align: center;
+    }
+    .imageContainer {
+      padding: 25px 0px;
+    }
+    div {
+      width: 100%;
+      text-align: center;
+      height: 100%;
+    }
+  }
+
+  // skill 900px
+  .skillContainer li {
+    width: 33%;
+  }
+
+  .skillContainer ul {
+    font-size: 4rem;
+  }
+
+  // projects 900px
+  .website {
+    flex-direction: column;
+    div {
+      width: 100%;
+      text-align: center;
+    }
+    ul {
+      margin: 0 auto;
+    }
+    .description {
+      padding: 15px 0px;
+      height: 100%;
+    }
+    .imageContainer {
+      padding: 25px 0px;
+    }
+  }
+
+  .socialMedia a {
+    font-size: 3rem;
+  }
+
+  // contact 900px
+
+  .contact .flexContainer {
+    flex-direction: column;
+    div {
+      padding: 0px;
+      text-align: center;
+    }
+    .imageContainer {
+      width: 80%;
+    }
+    .description {
+      padding-top: 25px;
+      width: 100%;
+    }
+    ul {
+      margin: 0 auto;
+    }
+  }
+  // end of 900px media
+}
+
+@media (max-width: 600px) {
+  .skillContainer li {
+    width: 50%;
+  }
+
+  .links a {
+    font-size: 1.4rem;
+  }
 }
