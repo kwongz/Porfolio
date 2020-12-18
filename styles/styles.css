@@ -273,7 +273,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  font-family: "Lora", serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -337,7 +337,7 @@ p {
   line-height: 1.6;
   word-spacing: 1px;
   color: grey;
-  font-family: "Roboto", sans-serif;
+  font-family: "Domine", serif;
 }
 
 h1,
@@ -430,7 +430,7 @@ input[type="checkbox"] {
 
 h1 {
   font-size: 7rem;
-  font-family: "Russo One", sans-serif;
+  font-weight: bold;
 }
 
 h1:last-child {
