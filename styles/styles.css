@@ -557,6 +557,10 @@ section {
   height: 100px;
 }
 
+.website .description:last-child {
+  padding-bottom: 50px;
+}
+
 .website .links {
   margin-top: 50px;
   padding-bottom: 0px;
