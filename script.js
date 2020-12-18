@@ -28,7 +28,7 @@ app.typeWriter = () => {
         }
         let text = typingText[thisWordIndex].slice(0, i);
         document.getElementById("typeWriter").innerHTML = text;
-    }, 150);
+    }, 125);
 }
 
 
