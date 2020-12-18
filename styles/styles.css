@@ -476,8 +476,10 @@ h1:last-child {
     overflow: hidden;
     position: fixed;
     left: 800px;
-    width: 100%;
+    width: 100vw;
     background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: 0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
   }
   .navBar .flexContainer {
     -webkit-box-orient: vertical;
@@ -504,7 +506,7 @@ h1:last-child {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: 100vw;
     padding-bottom: 10px;
   }
   nav a {
@@ -543,6 +545,7 @@ h1:last-child {
 
 section h2 {
   text-align: center;
+  padding-top: 50px;
 }
 
 section {
@@ -579,12 +582,14 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 100px 0px;
 }
 
 .about h2 {
   text-align: left;
   border-bottom: none;
   margin: initial;
+  padding-top: 0px;
 }
 
 .about div {
@@ -625,9 +630,43 @@ section {
   padding: 20px 0px;
 }
 
+.skillContainer li:hover {
+  color: orange;
+  -webkit-animation: pulse 2.5s infinite ease-in-out;
+          animation: pulse 2.5s infinite ease-in-out;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 .skillContainer span {
   font-size: 2rem;
   padding-top: 5px;
+}
+
+.projects {
+  overflow-x: hidden;
 }
 
 .website {
@@ -804,6 +843,10 @@ section {
 }
 
 @media (max-width: 600px) {
+  .about .imageContainer {
+    width: 100%;
+    min-width: initial;
+  }
   .skillContainer li {
     width: 50%;
   }

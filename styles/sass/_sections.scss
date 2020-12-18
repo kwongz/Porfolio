@@ -1,6 +1,7 @@
 // General Section styling
 section h2 {
   text-align: center;
+  padding-top: 50px;
 }
 
 section {
@@ -33,10 +34,12 @@ section {
 .about {
   display: flex;
   align-items: center;
+  padding: 100px 0px;
   h2 {
     text-align: left;
     border-bottom: none;
     margin: initial;
+    padding-top: 0px;
   }
   div {
     width: 60%;
@@ -70,12 +73,33 @@ section {
   padding: 20px 0px;
 }
 
+.skillContainer li:hover {
+  color: orange;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 .skillContainer span {
   font-size: 2rem;
   padding-top: 5px;
 }
 
 // project section
+
+.projects {
+  overflow-x: hidden;
+}
 
 .website {
   display: flex;
@@ -239,6 +263,11 @@ section {
 }
 
 @media (max-width: 600px) {
+  .about .imageContainer {
+    width: 100%;
+    min-width: initial;
+  }
+
   .skillContainer li {
     width: 50%;
   }
