@@ -526,7 +526,7 @@ h1:last-child {
     display: block;
     height: 50px;
     width: 50px;
-    font-size: 5rem;
+    font-size: 4rem;
     position: fixed;
     right: 25px;
     top: 25px;
@@ -542,6 +542,12 @@ h1:last-child {
   }
   input[type="checkbox"]:checked ~ .navBar {
     left: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3.4rem;
   }
 }
 
