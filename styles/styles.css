@@ -339,15 +339,6 @@ p {
   color: #9a9a9a;
 }
 
-svg {
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
-  width: 100%;
-  z-index: 3;
-  fill: #ffffff;
-}
-
 h1,
 ul {
   margin: 0px;
@@ -356,6 +347,24 @@ ul {
 
 li {
   list-style: none;
+}
+
+.header .svg {
+  fill: #fff;
+  width: 101%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  z-index: 3;
+  fill: #ffffff;
 }
 
 header {

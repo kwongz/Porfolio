@@ -65,15 +65,6 @@ p {
   color: $grey;
 }
 
-svg {
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
-  width: 100%;
-  z-index: 3;
-  fill: $white;
-}
-
 // stripped styles
 h1,
 ul {
@@ -83,4 +74,24 @@ ul {
 
 li {
   list-style: none;
+}
+
+// svg
+
+.header .svg {
+  fill: #fff;
+  width: 101%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  z-index: 3;
+  fill: $white;
 }
