@@ -17,7 +17,7 @@ section {
 }
 
 .website .links {
-  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 0px;
   width: 100%;
 }
@@ -27,7 +27,11 @@ section {
   color: black;
   border: 1px solid black;
   border-radius: 15px;
-  margin: 0 15px;
+  margin: 0 auto;
+}
+
+.links a:last-child {
+  margin-left: 15px;
 }
 
 .links a:hover,
