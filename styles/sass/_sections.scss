@@ -47,8 +47,7 @@ section {
     padding: 0px 15px;
   }
   .imageContainer {
-    width: 40%;
-    min-width: 300px;
+    min-width: 400px;
     img {
       margin: 0px;
     }
@@ -73,9 +72,11 @@ section {
   padding: 20px 0px;
 }
 
+.description li:hover,
+.socialMedia a:hover,
 .skillContainer li:hover {
   color: orange;
-  animation: pulse 2.5s infinite ease-in-out;
+  animation: pulse 2.25s infinite ease-in-out;
 }
 
 @keyframes pulse {
@@ -83,7 +84,7 @@ section {
     scale: 1;
   }
   50% {
-    scale: 1.1;
+    scale: 1.2;
   }
   100% {
     scale: 1;
@@ -200,6 +201,9 @@ section {
     }
     .imageContainer {
       padding: 25px 0px;
+      min-width: 280px;
+      max-width: 400px;
+      width: 70%;
     }
     div {
       width: 100%;
@@ -263,11 +267,6 @@ section {
 }
 
 @media (max-width: 600px) {
-  .about .imageContainer {
-    width: 100%;
-    min-width: initial;
-  }
-
   .skillContainer li {
     width: 50%;
   }

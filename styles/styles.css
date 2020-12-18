@@ -304,7 +304,7 @@ img {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   border-bottom: 3px solid black;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -599,8 +599,7 @@ section {
 }
 
 .about .imageContainer {
-  width: 40%;
-  min-width: 300px;
+  min-width: 400px;
 }
 
 .about .imageContainer img {
@@ -630,10 +629,12 @@ section {
   padding: 20px 0px;
 }
 
+.description li:hover,
+.socialMedia a:hover,
 .skillContainer li:hover {
   color: orange;
-  -webkit-animation: pulse 2.5s infinite ease-in-out;
-          animation: pulse 2.5s infinite ease-in-out;
+  -webkit-animation: pulse 2.25s infinite ease-in-out;
+          animation: pulse 2.25s infinite ease-in-out;
 }
 
 @-webkit-keyframes pulse {
@@ -641,7 +642,7 @@ section {
     scale: 1;
   }
   50% {
-    scale: 1.1;
+    scale: 1.2;
   }
   100% {
     scale: 1;
@@ -653,7 +654,7 @@ section {
     scale: 1;
   }
   50% {
-    scale: 1.1;
+    scale: 1.2;
   }
   100% {
     scale: 1;
@@ -785,6 +786,9 @@ section {
   }
   .about .imageContainer {
     padding: 25px 0px;
+    min-width: 280px;
+    max-width: 400px;
+    width: 70%;
   }
   .about div {
     width: 100%;
@@ -843,10 +847,6 @@ section {
 }
 
 @media (max-width: 600px) {
-  .about .imageContainer {
-    width: 100%;
-    min-width: initial;
-  }
   .skillContainer li {
     width: 50%;
   }
@@ -861,8 +861,12 @@ section {
 
 footer {
   background-color: black;
-  color: white;
-  padding: 25px 0px;
   text-align: center;
+  padding: 15px 0px;
+}
+
+footer p {
+  margin: 0px;
+  color: white;
   font-size: 2rem;
 }
