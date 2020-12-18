@@ -271,9 +271,9 @@ html {
 
 html {
   font-size: 62.5%;
-  font-family: "Cantata One", serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  font-family: "Lora", serif;
 }
 
 img {
@@ -337,6 +337,7 @@ p {
   line-height: 1.6;
   word-spacing: 1px;
   color: grey;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
