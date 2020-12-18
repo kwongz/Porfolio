@@ -315,7 +315,7 @@ h2 {
 
 h3 {
   font-size: 1.6rem;
-  color: #343a40;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -323,7 +323,7 @@ h3 {
 a {
   font-size: 1.7rem;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
 
@@ -336,7 +336,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.6;
   word-spacing: 1px;
-  color: #9a9a9a;
+  color: grey;
 }
 
 h1,
@@ -364,7 +364,7 @@ svg {
   left: 0px;
   width: 100%;
   z-index: 2;
-  fill: #ffffff;
+  fill: white;
 }
 
 header {
@@ -374,7 +374,7 @@ header {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  color: #ffffff;
+  color: white;
 }
 
 .navBar {
@@ -809,6 +809,10 @@ section {
   }
   .links a {
     font-size: 1.4rem;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
 

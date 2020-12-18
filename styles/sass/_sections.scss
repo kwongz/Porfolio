@@ -245,5 +245,9 @@ section {
 
   .links a {
     font-size: 1.4rem;
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 }
