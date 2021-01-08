@@ -649,9 +649,7 @@ section {
   padding: 20px 0px;
 }
 
-.description li:hover,
-.socialMedia a:hover,
-.skillContainer li:hover {
+.socialMedia a:hover {
   color: orange;
   -webkit-animation: pulse 2.25s infinite ease-in-out;
           animation: pulse 2.25s infinite ease-in-out;
