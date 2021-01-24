@@ -580,19 +580,38 @@ section {
 
 .links a {
   padding: 10px 20px;
-  color: black;
   border: 1px solid black;
   border-radius: 15px;
   margin: 0 auto;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.links a::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 0 0 50% 50%;
+  width: 100%;
+  height: 0%;
+  background: orange;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .links a:last-child {
   margin-left: 15px;
 }
 
-.links a:hover,
-.links a:focus {
-  background-color: orange;
+.links a:hover::before,
+.links a:focus::before {
+  height: 180%;
 }
 
 .about {
