@@ -530,10 +530,10 @@ h1:last-child {
     display: block;
     height: 50px;
     width: 50px;
-    font-size: 4rem;
+    font-size: 2.5rem;
     position: fixed;
-    right: 25px;
-    top: 25px;
+    right: -20px;
+    top: 10px;
     z-index: 5;
     color: orange;
   }
@@ -838,8 +838,12 @@ section {
     text-align: center;
     height: 100%;
   }
+  .about p {
+    text-align: left;
+  }
   .skillContainer li {
     width: 33%;
+    height: 125px;
   }
   .skillContainer ul {
     font-size: 4rem;
@@ -864,9 +868,6 @@ section {
   .website .imageContainer {
     padding: 25px 0px;
   }
-  .socialMedia a {
-    font-size: 3rem;
-  }
   .contact .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -885,13 +886,19 @@ section {
     width: 100%;
   }
   .contact .flexContainer ul {
-    margin: 0 auto;
+    margin: 50px auto;
   }
 }
 
 @media (max-width: 600px) {
   .skillContainer li {
-    width: 50%;
+    width: calc(50% - 20px);
+  }
+  .skillContainer li span {
+    font-size: 1.8rem;
+  }
+  .skillContainer li:nth-child(even) {
+    margin-left: 20px;
   }
   .links a {
     font-size: 1.4rem;
@@ -902,6 +909,9 @@ section {
   }
   .links a:last-child {
     margin-left: auto;
+  }
+  .socialMedia a {
+    font-size: 3rem;
   }
 }
 
@@ -915,4 +925,10 @@ footer p {
   margin: 0px;
   color: white;
   font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  footer p {
+    font-size: 1.8rem;
+  }
 }

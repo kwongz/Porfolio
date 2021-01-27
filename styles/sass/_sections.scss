@@ -239,11 +239,15 @@ section {
       text-align: center;
       height: 100%;
     }
+    p {
+      text-align: left;
+    }
   }
 
   // skill 900px
   .skillContainer li {
     width: 33%;
+    height: 125px;
   }
 
   .skillContainer ul {
@@ -269,10 +273,6 @@ section {
     }
   }
 
-  .socialMedia a {
-    font-size: 3rem;
-  }
-
   // contact 900px
 
   .contact .flexContainer {
@@ -289,7 +289,7 @@ section {
       width: 100%;
     }
     ul {
-      margin: 0 auto;
+      margin: 50px auto;
     }
   }
   // end of 900px media
@@ -297,7 +297,14 @@ section {
 
 @media (max-width: 600px) {
   .skillContainer li {
-    width: 50%;
+    width: calc(50% - 20px);
+    span {
+      font-size: 1.8rem;
+    }
+  }
+
+  .skillContainer li:nth-child(even) {
+    margin-left: 20px;
   }
 
   .links a {
@@ -310,5 +317,9 @@ section {
 
   .links a:last-child {
     margin-left: auto;
+  }
+
+  .socialMedia a {
+    font-size: 3rem;
   }
 }

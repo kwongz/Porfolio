@@ -8,3 +8,9 @@ footer {
     font-size: 2rem;
   }
 }
+
+@media (max-width: 600px) {
+  footer p {
+    font-size: 1.8rem;
+  }
+}
